@@ -1,0 +1,20 @@
+default: &default
+  host: http://local.badges.abril.com.br
+
+development:
+  <<: *default
+
+dev:
+  <<: *default
+
+qa:
+  <<: *default
+
+test:
+  <<: *default
+
+stage:
+  <<: *default
+
+production:
+  <<: *default
