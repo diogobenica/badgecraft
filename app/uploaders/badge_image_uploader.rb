@@ -4,7 +4,7 @@ class BadgeImageUploader < CarrierWave::Uploader::Base
   include Cloudinary::CarrierWave
 
   version :standard do
-    process :resize_to_fill => [100, 150, :north]
+    process :resize_to_fill => [250, 250, :north]
   end
 
   process :convert => 'png'
