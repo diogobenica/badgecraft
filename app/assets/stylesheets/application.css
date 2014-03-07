@@ -10,4 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require AdminLTE
+ *= require bootstrap.min
+ *= require ionicons.min
+ *= require font-awesome.min
  */
