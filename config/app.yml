@@ -1,5 +1,5 @@
 default: &default
-  host: http://local.badges.abril.com.br
+  host: http://badgecraft-abril.herokuapp.com
 
 development:
   <<: *default
