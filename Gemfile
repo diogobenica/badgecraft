@@ -25,7 +25,8 @@ gem 'turbolinks'
 # gem 'jbuilder', '~> 1.2'
 
 gem 'easy_config'
-gem 'paperclip-dropbox', '>= 1.1.7'
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

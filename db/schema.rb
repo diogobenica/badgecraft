@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307143544) do
+ActiveRecord::Schema.define(version: 20140307184847) do
 
   create_table "badge_assertions", force: true do |t|
     t.integer  "badge_id"
@@ -29,10 +29,7 @@ ActiveRecord::Schema.define(version: 20140307143544) do
     t.string   "criteria"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+    t.string   "image"
   end
 
   create_table "users", force: true do |t|

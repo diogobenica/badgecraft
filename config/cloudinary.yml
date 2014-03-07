@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: badgecraft-abril
+  api_key: '734266928912634'
+  api_secret: uuqfIPjYgx_FwLg-QxWtZyxofxQ
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: badgecraft-abril
+  api_key: '734266928912634'
+  api_secret: uuqfIPjYgx_FwLg-QxWtZyxofxQ
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: badgecraft-abril
+  api_key: '734266928912634'
+  api_secret: uuqfIPjYgx_FwLg-QxWtZyxofxQ
+  enhance_image_tag: true
+  static_image_support: false
