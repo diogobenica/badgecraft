@@ -1,5 +1,7 @@
 Badgecraft::Application.routes.draw do
+  resources :badge_assertions
   resources :badges
+  resources :users
 
   get 'criteria/:id' => 'badges#criteria', as: 'criteria'
   # The priority is based upon order of creation: first created -> highest priority.

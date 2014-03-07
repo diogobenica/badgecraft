@@ -1,0 +1,14 @@
+{
+  "uid": "<%= @badge_assertion.id %>",
+  "recipient": {
+    "type": "email",
+    "hashed": false,
+    "identity": "<%= @badge_assertion.user.email %>"
+  },
+  "issuedOn": "<%= @badge_assertion.created_at.iso8601 %>",
+  "badge": "<%= badge_url(@badge_assertion.badge, format: :json) %>",
+  "verify": {
+    "type": "hosted",
+    "url": "<%= badge_assertion_url(@badge_assertion, format: :json) %>",
+  }
+}

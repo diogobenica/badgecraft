@@ -10,7 +10,6 @@ class BadgesController < ApplicationController
   # GET /badges/1
   # GET /badges/1.json
   def show
-    byebug
   end
 
   # GET /badges/new

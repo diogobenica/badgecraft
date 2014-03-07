@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Badge:</strong>
+  <%= @badge_assertion.badge %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @badge_assertion.user %>
+</p>
+
+<%= javascript_include_tag "https://backpack.openbadges.org/issuer.js" %>
+<button id="issue">Send!</button>
+<script>
+  $('#issue').click(function() {
+    OpenBadges.issue(["<%= badge_assertion_url(@badge_assertion, format: :json) %>"], function(errors, successes) {
+      console.log(errors);
+      console.log(successes);
+      alert('Foi!');
+    });
+  });
+</script>
+
+<%= link_to 'Edit', edit_badge_assertion_path(@badge_assertion) %> |
+<%= link_to 'Back', badge_assertions_path %>

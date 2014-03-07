@@ -1,0 +1,29 @@
+<h1>Listing badge_assertions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Badge</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @badge_assertions.each do |badge_assertion| %>
+      <tr>
+        <td><%= badge_assertion.badge %></td>
+        <td><%= badge_assertion.user %></td>
+        <td><%= link_to 'Show', badge_assertion %></td>
+        <td><%= link_to 'Edit', edit_badge_assertion_path(badge_assertion) %></td>
+        <td><%= link_to 'Destroy', badge_assertion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Badge assertion', new_badge_assertion_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@badge_assertion) do |f| %>
+  <% if @badge_assertion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@badge_assertion.errors.count, "error") %> prohibited this badge_assertion from being saved:</h2>
+
+      <ul>
+      <% @badge_assertion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :badge_id %><br>
+    <%= f.text_field :badge_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

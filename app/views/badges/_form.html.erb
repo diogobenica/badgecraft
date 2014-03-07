@@ -25,6 +25,7 @@
     <%= f.text_field :criteria %>
   </div>
   <div class="field">
+    <div><%= image_tag @badge.image.url(:thumb) %></div>
     <%= f.label :image %>
     <%= f.file_field :image %>
   </div>
